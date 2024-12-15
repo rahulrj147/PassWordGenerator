@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="heading"> PASSWORD GENERATOR</div>
+        <div class="password"> 
+            <input type="text" class="output">
+            <!-- <div class="output"></div> -->
+            <div class="copy"><i class="fa-regular fa-copy"></i></div>
+            <div class="copied"></div>
+        </div>
+        <div class="input">
+            <div class="length">
+                <div class="passlen">Password Length</div>
+                <div class="num">1</div>
+            </div>
+            <div class="slider">
+                <input type="range" min="1" max="20"  class="slide" value="1">
+            </div>
+            <div class="option">
+                <div>
+                    <input type="checkbox" id="uppercase" name="uppercase">
+                <label for="uppercase">Include Uppercase Latter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase" name="lowercase">
+                <label for="lowercase">Include lowercase Latter</label>
+                </div>
+              <div>
+                <input type="checkbox" id="numbers" name="numbers">
+                <label for="numbers">Include Numbers </label>
+              </div>
+               <div>
+                <input type="checkbox" id="symbol" name="symbol">
+                <label for="symbol">Include symbol</label>
+               </div>
+            </div>
+            <div class="strength">
+                <div class="strn">Strength</div>
+                <div class="type"></div>
+            </div>
+            <div class="generate">
+                <button class="btn" >Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
